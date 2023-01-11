@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+        <button [routerLink]="['/']"  [ngClass]="data?.query=='/' ? 'btn-light' : 'bth-dark'" class="btn m-2">
+            Home
+        </button>    
+    </div>
+    <div class="row">
+        <button [routerLink]="['/dept-list']"  [ngClass]="data?.query=='/dept-list' ? 'btn-light' : 'bth-dark'" class="btn m-2">
+            Dept List
+        </button>    
+    </div>
+    <div class="row">
+        <button [routerLink]="['/dept-form']"  [ngClass]="data?.query=='/dept-form' ? 'btn-light' : 'bth-dark'" class="btn m-2">
+            Dept Form
+        </button>    
+    </div>
+    <div class="row">
+        <button (click)="buttonWasClicked()" class="btn btn-warning m-2">
+            Logout
+        </button>
+    </div>
+</div>
